@@ -1,0 +1,135 @@
+* {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* top bar */
+/* header {
+    position: fixed;
+    width: 100%;
+} */
+
+header .top-bar-zero {
+    background-color: grey;
+}
+
+
+header .top-bar-one {
+    display: flex;
+    justify-content: space-around;
+    width: 5%;
+}
+
+ul.top-bar-two {
+    list-style: none;
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;   
+}
+/* end of top bar */
+
+
+
+/* navbar */
+.navbar-zero {
+    background-color: wheat;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+}
+
+.navbar-zero ul {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    list-style: none;
+}
+
+.navbar-one {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.navbar-one span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+}
+/* end of navbar */
+
+
+/* Responsiveness */
+@media screen and (min-width:768px) {
+    .top-bar-zero {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .top-bar-zero {
+        display: none;
+    }
+    
+    .navbar-zero ul {
+        display: none;
+    }
+    
+    .navbar-one {
+        display: flex;
+    }  
+}
+
+
+
+/* Banner section */
+.banner-zero {
+    padding: 8%;
+}
+
+.banner-two {
+    margin-left: 5%;   
+}
+/* End of Banner section */
+
+
+
+/* main program */
+.main-program-zero {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+}
+
+.main-program-one {
+    text-align: center;
+}
+
+.main-program-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.main-program-three {
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;  
+}
+
+@media screen and (max-width: 768px) {
+    .main-program-two {
+        flex-direction: column;
+    }
+    
+}
+/* end of main program */
